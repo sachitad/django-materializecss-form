@@ -109,7 +109,6 @@
         <div class="input-field col {{ classes.label }}">
             <textarea id="{{ field.auto_id }}" class="materialize-textarea" name="{{field.name}}">{% if field.value %}{{ field.value }}{% endif %}</textarea>
             {% if field.auto_id %}
-            {{classes.label}}
                 <label class="{{ classes.label }}{% if field.field.required %}{{ form.required_css_class }}{% endif %}" for="{{ field.auto_id }}">{{ field.label }}</label>
             {% endif %}
 
@@ -118,7 +117,7 @@
                 {% endfor %}
 
             {% if field.help_text %}
-                <p>
+                <p style="font-size: 0.8em;" class="teal-text">
                     {{ field.help_text|safe }}
                 </p>
             {% endif %}
@@ -138,7 +137,7 @@
                 {% endfor %}
 
             {% if field.help_text %}
-                <p>
+                <p style="font-size: 0.8em;" class="teal-text">
                     {{ field.help_text|safe }}
                 </p>
             {% endif %}
@@ -156,7 +155,7 @@
                 {% endfor %}
 
             {% if field.help_text %}
-                <p>
+                <p style="font-size: 0.8em;" class="teal-text">
                     {{ field.help_text|safe }}
                 </p>
             {% endif %}
